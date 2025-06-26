@@ -3,10 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <title>Vacation Scheduler App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.65);
+      padding: 50px;
+      border-radius: 16px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+      max-width: 500px;
+      backdrop-filter: blur(4px);
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: #fff;
+      padding: 14px 30px;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 5px 20px rgba(0, 114, 255, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0, 114, 255, 0.7);
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
-  <h1>📱 Vacation Scheduler App</h1>
-  <p>Download the latest signed APK below:</p>
-  <a href="app-release-signed.apk" download>➡️ Click here to download the APK</a>
+  <div class="container">
+    <h1>📱 Vacation Scheduler App</h1>
+    <p>Plan your perfect getaway, track dates, and keep everything organized in one sleek mobile app.</p>
+    <a class="download-btn" href="app-release-signed.apk" download>📥 Download APK</a>
+    <div class="footer">
+      Created by Jarred Smith · D424 Software Engineering Capstone
+    </div>
+  </div>
 </body>
 </html>
