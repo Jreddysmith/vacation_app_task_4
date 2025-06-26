@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/excursion_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/excursion_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Excursion Title"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/excursion_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Excursion Date (YYYY-MM-DD)"
+        android:inputType="date"/>
+
+    <Button
+        android:id="@+id/save_excursion_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Excursion"
+        android:textSize="18sp"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Excursion"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/holo_red_dark"/>
+
+    <Button
+        android:id="@+id/alert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Alert"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/holo_green_dark"/>
+
+    <Button
+        android:id="@+id/new_excursion_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Excursion"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
